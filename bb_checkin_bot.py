@@ -86,7 +86,7 @@ while True:
     try:
         current_block = w3.eth.block_number
         print(f"Triggering a CheckIn Txn. Current block: [{current_block}]")
-        #checkIn()
+        checkIn()
         print(f"Sleeping for: [{(60*60*24) + 60}] seconds...")
         time.sleep((60*60*24) + 60) # adjust sleeping time here if needed...
     except Exception as e:
