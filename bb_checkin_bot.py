@@ -64,7 +64,7 @@ def checkIn():
 
     transaction = {
         "nonce": WALLET_NONCE,
-        "gasPrice": (w3.eth.gas_price + 4000000000),
+        "gasPrice": (w3.eth.gas_price),
         "gas": gas_estimate,
         "to": Web3.toChecksumAddress(contract_address),
         "data": data,
